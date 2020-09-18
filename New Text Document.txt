@@ -1,0 +1,8 @@
+{"CountryName":"Israel","CapitalName":"Jerusalem","CapitalLatitude":"31.766666666666666","CapitalLongitude":"35.233333","CountryCode":"IL","ContinentName":"Asia"},
+
+{"CountryName":"Norfolk Island","CapitalName":"Kingston","CapitalLatitude":"-29.05","CapitalLongitude":"167.966667","CountryCode":"NF","ContinentName":"Australia"},
+
+{"CountryName":"US Minor Outlying Islands","CapitalName":"Washington","CapitalLatitude":" D.C.","CapitalLongitude":"38.883333","CountryCode":"-77.000000","ContinentName":"UM"},
+
+{"CountryName":"Hong Kong","CapitalName":"N/A","CapitalLatitude":"0","CapitalLongitude":"0.000000","CountryCode":"HK","ContinentName":"Asia"},
+
