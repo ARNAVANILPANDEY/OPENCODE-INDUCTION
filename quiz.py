@@ -21,7 +21,7 @@ CREATE TABLE country(
 
 json_data=json.loads(open("country-capitals.json").read())
 
-print("\n Please wait while the database for QUIZ is being prepared...")
+print("\n Please wait while the database for QUIZ is being prepared....")
 for entry in json_data:
     cur.execute('''INSERT OR IGNORE INTO country(Name,Capital,Continent)
                     VALUES( ?, ?, ? )''',
@@ -34,6 +34,7 @@ n=int(input("Enter the number of question sets you want to answer:  "))
 print("\n The max marks you can get is: ",2*n)
 print("\n The quiz will contain {} question sets of country capital name and continent name".format(n))
 print("\n For each correct capital you will be awarded 1.5 and for each correct continent you will be awarded 0.5 marks")
+print("\n \"Enter the correct option A, B, C, D in any case for response\" \n")
 print("\n Press Enter key to start\n____________________________________\n")
 input()
 marks=0.0
@@ -164,10 +165,10 @@ for i in range(n):
 
     #print(anscap,anscont)
     
-    print("\n{}.a) Enter the capital of country {}:  (A){} (B){} (C){} (D){}"
+    print("\n{}.a) Enter the capital of country {}:\n  (A){} (B){} (C){} (D){}"
               .format(qnum,data1[0],optcap["A"],optcap["B"],optcap["C"],optcap["D"]))
 
-    usercap=str(input("  Response: "))
+    usercap=str(input("  \nResponse: "))
     if(optcap[usercap.upper()] == anscap):
         print("Correct")
         marks=marks+1.5
@@ -175,7 +176,7 @@ for i in range(n):
         print("Wrong")
         print("\n Correct answer is {}".format(key_list_caps[value_list_caps.index(anscap)]))
 
-    print("\n{}.b) Enter the continent of country {}:  (A){} (B){} (C){} (D){}"
+    print("\n{}.b) Enter the continent of country {}:\n  (A){} (B){} (C){} (D){}"
               .format(qnum,data1[0],optcon["A"],optcon["B"],optcon["C"],optcon["D"]))
     
     usercon=str(input("  Response: "))
@@ -193,4 +194,4 @@ for i in range(n):
         print("\n Wait for 2 second for next question\n\n\n")
         time.sleep(2)
     
-print("\n\n You achieved {} marks".format(marks))
+print("\n\nQUIZ COMPLETED!\n Your score is {}".format(marks))
