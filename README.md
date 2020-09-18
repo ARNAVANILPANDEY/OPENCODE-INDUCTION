@@ -8,6 +8,6 @@ Copy the files into a local directory, execute the quiz.py, the database named q
 https://sqlitebrowser.org/dl/
 
 ### My other repository links are given below, pease check out:
-1)Basic Python Programs: https://github.com/ARNAVANILPANDEY/Python-Coursera.git .
-2)Web Dvelopment: https://github.com/ARNAVANILPANDEY/COURSERA-TEST.git
+#### 1)Basic Python Programs: https://github.com/ARNAVANILPANDEY/Python-Coursera.git .
+#### 2)Web Dvelopment: https://github.com/ARNAVANILPANDEY/COURSERA-TEST.git
 
